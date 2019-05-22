@@ -1,0 +1,32 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/riverluoo/riverluoo.github.io #配置git仓库地址
+          searchPaths: repo #配置仓库路径
+          username: riverluoo #访问git仓库的用户名
+          password: wang12138 #访问git仓库的用户密码
+      label: master #配置仓库的分支
+  rabbitmq:
+    host: 39.96.69.79
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtualHost: /
+    publisherConfirms: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
