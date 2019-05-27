@@ -12,6 +12,8 @@
         <module>common</module>
         <module>register</module>
         <module>config</module>
+        <module>gateway</module>
+        <module>client</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -12,7 +12,7 @@ spring:
           uri: https://github.com/riverluoo/riverluoo.github.io
           searchPaths: repo
           username: riverluoo
-          password: xxxxxx
+          password: wang12138
       label: master
   rabbitmq:
     host: 39.96.69.79
