@@ -5,7 +5,7 @@ spring:
     active: dev
   cloud:
     config:
-      name: gateway,key
+      name: gateway,key,rabbitmq
       label: master
       discovery:
         enabled: true
