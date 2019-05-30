@@ -1,5 +1,6 @@
 package com.riverluoo.client.user.service;
 
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.riverluoo.client.user.mapper.UserMapper;
 import com.riverluoo.client.user.model.bean.UserBean;
 import com.riverluoo.client.user.model.request.LoginRequest;
@@ -24,7 +25,7 @@ public class UserService extends BaseService {
 
     public List<UserBean> login(LoginRequest loginRequest) {
 
-        return userMapper.selectUser(loginRequest.getName());
+        return userMapper.selectList(new EntityWrapper<UserBean>().eq("name", loginRequest.getName()));
     }
 
     ;
