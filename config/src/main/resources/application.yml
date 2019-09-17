@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/riverluoo/riverluoo.github.io
+          uri: https://github.com/riverluoo/config
           searchPaths: repo
           username: riverluoo
           password: wang12138
