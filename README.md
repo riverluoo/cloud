@@ -6,6 +6,6 @@ http://localhost:8084/swagger-ui.html
 
 ## getway
 ~~~
-http://ocalhost:8080/USER/user/login
+http://localhost:8080/USER/user/login
 ~~~
 

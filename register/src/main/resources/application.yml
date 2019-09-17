@@ -13,8 +13,8 @@ spring:
   rabbitmq:
     host: 39.96.69.79
     port: 5672
-    username: rabbitmq
-    password: rabbitmq
+    username: root
+    password: 123456
     virtualHost: /
     publisherConfirms: true
 eureka:
