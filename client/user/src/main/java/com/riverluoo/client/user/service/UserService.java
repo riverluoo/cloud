@@ -24,8 +24,12 @@ public class UserService extends BaseService {
     private UserMapper userMapper;
 
     public List<UserBean> login(LoginRequest loginRequest) {
+        List<UserBean> userBeans = userMapper.selectList(new EntityWrapper<UserBean>().eq("name", loginRequest.getName()));
+        return userBeans;
+    }
 
-        return userMapper.selectList(new EntityWrapper<UserBean>().eq("name", loginRequest.getName()));
+    public static void main(String[] args) {
+        System.out.println(new EntityWrapper<UserBean>().eq("name", "qw"));
     }
 
     ;
